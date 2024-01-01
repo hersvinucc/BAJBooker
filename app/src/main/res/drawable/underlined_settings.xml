@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape without underline -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- Underline shape at the bottom -->
+    <item
+        android:top="-3dp"
+        android:right="-2dp"
+        android:left="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:color="#000"
+                android:width="2dp" />
+        </shape>
+    </item>
+</layer-list>

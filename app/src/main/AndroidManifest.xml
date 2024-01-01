@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BookAJobBooker"
         tools:targetApi="31">
         <activity
+            android:name=".GetStarted"
+            android:exported="false" />
+        <activity
             android:name=".ConfirmPassword"
             android:exported="false" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".GetStarted"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
