@@ -5,7 +5,8 @@
     <color name="lightBlue">#6ea4e7</color>
     <color name="blue">#89cff0</color>
     <color name="green">#28c90f</color>
-    <color name="gray">#6b6b6b</color>
+    <color name="gray">#9E9E9E</color>
     <color name="orange">#FF5733</color>
     <color name="brown">#633905</color>
+    <color name="red">#FF0000</color>
 </resources>

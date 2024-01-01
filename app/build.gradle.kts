@@ -19,7 +19,6 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -33,7 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
 }
+
 
 dependencies {
 
@@ -44,6 +45,8 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("com.hbb20:ccp:2.7.0")
 
     val nav_version = "2.7.6"
 

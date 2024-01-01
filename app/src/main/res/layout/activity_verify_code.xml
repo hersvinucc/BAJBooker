@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyCode">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="362dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/bajLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/book"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code"
+        android:layout_width="362dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="We send you a code"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Enter it below to verify juandelacruz@gmail.com"
+        android:textColor="@color/gray"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/code" />
+
+    <EditText
+        android:id="@+id/verificationCode"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Verification Code"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="10dp"
+        android:maxLength="6"
+        android:inputType="number"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/input_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Didn't receive code?"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/code" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Next"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
