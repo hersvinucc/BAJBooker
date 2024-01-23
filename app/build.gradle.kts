@@ -47,9 +47,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.core:core-splashscreen:1.0.0")
     implementation("com.hbb20:ccp:2.7.0")
+    implementation ("com.android.volley:volley:1.2.0")
+    implementation ("com.google.android.gms:play-services-maps:17.0.1")
+
+
 
     val nav_version = "2.7.6"
 
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
 }

@@ -60,11 +60,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/firstName"
+            android:id="@+id/fullname"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@drawable/input_bg_style"
-            android:hint="First Name"
+            android:hint="Full Name"
             android:inputType="text"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
@@ -75,17 +75,17 @@
             app:layout_constraintTop_toTopOf="@id/formContainer" />
 
         <EditText
-            android:id="@+id/lastName"
+            android:id="@+id/Gender"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="90dp"
             android:background="@drawable/input_bg_style"
-            android:hint="Last Name"
+            android:hint="Gender"
             android:inputType="text"
             android:paddingLeft="10dp"
             android:fontFamily="@font/poppins_regular"
-            app:layout_constraintTop_toTopOf="@id/firstName"
+            app:layout_constraintTop_toTopOf="@id/fullname"
             app:layout_constraintEnd_toEndOf="@id/formContainer"
             app:layout_constraintStart_toStartOf="@id/formContainer" />
 
@@ -103,7 +103,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/formContainer" />
 
-        <EditText
+       <!--  <EditText
             android:id="@+id/emailAddress"
             android:layout_width="350dp"
             android:layout_height="50dp"
@@ -116,13 +116,13 @@
             android:fontFamily="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="@id/formContainer"
             app:layout_constraintStart_toStartOf="@id/formContainer"
-            app:layout_constraintTop_toTopOf="@id/lastName" />
-
-        <EditText
+            app:layout_constraintTop_toTopOf="@id/userName" />
+-->
+        <!-- <EditText
             android:id="@+id/editTextDate"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginTop="270dp"
+            android:layout_marginTop="210dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/input_bg_style"
             android:inputType="none"
@@ -132,7 +132,7 @@
             android:fontFamily="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="@id/formContainer"
             app:layout_constraintStart_toStartOf="@id/formContainer"
-            app:layout_constraintTop_toTopOf="@id/emailAddress"
+            app:layout_constraintTop_toTopOf="@id/userName"
             android:onClick="showDatePickerDialog" />
         <DatePicker
             android:id="@+id/datePicker"
@@ -146,9 +146,23 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:datePickerMode="spinner"
-            android:visibility="gone"
-            />
-<!--        <EditText-->
+            android:visibility="gone"  />-->
+            <EditText
+           android:id="@+id/editEmail"
+           android:layout_width="350dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="210dp"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/input_bg_style"
+           android:inputType="text"
+           android:hint="Email"
+           android:paddingLeft="10dp"
+           android:fontFamily="@font/poppins_regular"
+           app:layout_constraintEnd_toEndOf="@id/formContainer"
+           app:layout_constraintStart_toStartOf="@id/formContainer"
+           app:layout_constraintTop_toTopOf="@id/userName" />
+
+ <!--           <EditText-->
 <!--            android:layout_width="350dp"-->
 <!--            android:layout_height="50dp"-->
 <!--            android:layout_gravity="center_horizontal"-->
@@ -165,7 +179,7 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="330dp"
+            android:layout_marginTop="270dp"
             android:fontFamily="@font/poppins_regular"
             android:background="@drawable/input_bg_style"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -192,7 +206,38 @@
                 android:fontFamily="@font/poppins_regular"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+
         </LinearLayout>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/input_bg_style"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="390dp"
+            android:background="@drawable/input_bg_style"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </FrameLayout>
 
 
@@ -200,11 +245,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="70dp"
         android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/nextButton"
+        app:layout_constraintBottom_toBottomOf="@id/registerButton"
         >
         <TextView
             android:layout_width="300dp"
@@ -224,11 +269,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/registerButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="Next"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
         android:textSize="20sp"
         android:fontFamily="@font/poppins_bold"
         android:enabled="false"
